@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-www-update",
+  "version": "3.2.2",
+  "description": "www/ dir hot update for Cordova/PhoneGap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaenow/cordova-plugin-www-update.git"
+  },
+  "author": "LuoWen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaenow/cordova-plugin-www-update/issues"
+  },
+  "homepage": "https://github.com/vaenow/cordova-plugin-www-update#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  }
+}

@@ -1,2 +1,3 @@
+
 # cordova-plugin-www-update
-Copy all assets from www/ to /data/data/, and hot update from server.  
+App www dir hot updater for Cordova/PhoneGap

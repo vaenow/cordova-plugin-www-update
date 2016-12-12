@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-www-update" version="3.2.2">
+    <name>wwwHotUpdate</name>
+    <description>Cordova www Hot Update</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,www,hot,update,hot update,dynamic,updater</keywords>
+    
+    <!-- js -->
+    <js-module src="www/jsv2/jquery-1.11.0.min.js"/>
+    <js-module src="www/jsv2/bootstrap.min.js"/>
+    <js-module src="www/jsv2/underscore.js"/>
+    <js-module src="www/jsv2/Config.js"/>
+    <js-module src="www/jsv2/XHR.js"/>
+    <js-module src="www/jsv2/CheckVersion.js"/>
+    <js-module src="www/jsv2/Const.js"/>
+    <js-module src="www/jsv2/DeleteDir.js"/>
+    <js-module src="www/jsv2/DeleteFile.js"/>
+    <js-module src="www/jsv2/DownloadFile.js"/>
+    <js-module src="www/jsv2/Load.js"/>
+    <js-module src="www/jsv2/Logger.js"/>
+    <js-module src="www/jsv2/Update.js"/>
+    <js-module src="www/jsv2/MsgBox.js"/>
+    <js-module src="www/jsv2/BackBtn.js"/>
+    <js-module src="www/jsv2/UrlParams.js"/>
+    <js-module src="www/jsv2/CheckUpdateOnResume.js"/>
+    <js-module src="www/jsv2/Notification.js"/>
+    <js-module src="www/jsv2/Statis.js">
+        <clobbers target="Statis"/>
+    </js-module>
+    <js-module src="www/jsv2/DownloadApp.js">
+        <clobbers target="DownloadApp" />
+    </js-module>
+    <js-module src="www/jsv2/AppDir.js">
+        <clobbers target="AppDir" />
+    </js-module>
+    <js-module src="www/jsv2/Utils.js">
+        <clobbers target="AppUtils" />
+    </js-module>
+    <js-module src="www/jsv2/index.js">
+        <clobbers target="OnResumeUpdate" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        </config-file>
+    </platform>
+</plugin>
