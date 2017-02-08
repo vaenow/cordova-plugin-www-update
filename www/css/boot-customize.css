@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.my-btn {
+    margin-right: 5px;
+}
+
+.modal-backdrop{
+    opacity:.0 !important;
+}

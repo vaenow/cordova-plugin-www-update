@@ -5,7 +5,7 @@ var webpack = require("webpack")
 
 module.exports = {
     entry: {
-        index: path.join(__dirname, "www", "js", "index"),
+        HotUpdate: path.join(__dirname, "www", "js", "index"),
     },
     output: {
         path: path.join(__dirname, "www", "js-dest"), 
