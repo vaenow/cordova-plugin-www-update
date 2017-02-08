@@ -7,7 +7,7 @@
     <keywords>cordova,www,hot,update,hot update,dynamic,updater</keywords>
     
     <!-- js -->
-    <js-module src="www/jsv2/jquery-1.11.0.min.js"/>
+   <!--  <js-module src="www/jsv2/jquery-1.11.0.min.js"/>
     <js-module src="www/jsv2/bootstrap.min.js"/>
     <js-module src="www/jsv2/underscore.js"/>
     <js-module src="www/jsv2/Config.js"/>
@@ -39,7 +39,10 @@
     </js-module>
     <js-module src="www/jsv2/index.js">
         <clobbers target="OnResumeUpdate" />
-    </js-module>
+    </js-module> -->
+    <js-module src="www/js-dest/HotUpdate.js">
+        <clobbers target="HotUpdate" />
+    </js-module> 
 
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/*">
